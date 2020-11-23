@@ -4,20 +4,39 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chat App</title>
+  <title>QFE Connection</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="ios.css" />
   <script src="/socket.io/socket.io.js"></script>
 </head>
 
 <body>
   <main>
-    <section>
-      <p>Hey </p>
-      <br />
-      <p>Hi there!</p>
-      <br />
-    </section>
+    <section class="hero">
+      <div class="hero-body">
+          <div class="container has-background-primary-light" id="homeHeader">
+              <div class="section has-background-primary-light" id="homeHeader"></div>
+                  <h1 class="title has-text-primary level-item">QFE Alumni connection</h1>
+                  <br>
+                  <h3 class="subtitle has-text-grey level-item">Welcome to QFE Alumni connection</h3>
+                  <p class="subtitle has-text-greu level-item is-6"></p>
+              </div>
+              <br>
+              <div class="box" id="studentInfo">
+                  <h3 class="subtitle is-6">Student Info</p>
+                  <br>
+                  <button type ="submit" class="button is-dark" id="createTweetButton">Edit</button>
+              </div>
+              <div class="box" id="currentAppo">
+                  <h3 class="subtitle is-6">Your current appointment</p>
+              </div> 
+              <div class="box" id="alumniLoad">
+                  <h3 class="subtitle is-6">Book an Appointment with one of our Alumni</p>
+              </div> 
+          </div>
+      </div>
+  </section>
     <div>
       <form>
         <div>
